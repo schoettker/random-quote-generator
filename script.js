@@ -2,7 +2,7 @@ var button = document.getElementById('new-quote');
 var output = document.getElementById('output');
 
 button.addEventListener('click', function(event) {
-  var quote = getQuote(), quoteText = quote[0], quoteAuthor = quote[1];
+  var quote = getQuote();
   createParagraphs(quote);
 });
 
