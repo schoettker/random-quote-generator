@@ -1,10 +1,19 @@
 var button = document.getElementById('new-quote'); 
 var output = document.getElementById('output');
-
+var tweet = document.getElementById('tweet'), quote;
+newQuote();
 button.addEventListener('click', function(event) {
-  var quote = getQuote();
-  createParagraphs(quote);
+  newQuote();
 });
+
+tweet.addEventListener('click', function(event) {
+  generateTweet(quote, this);
+});
+
+function newQuote() {
+  quote = getQuote();
+  createParagraphs(quote);
+}
 
 
 function getQuote() {
@@ -12,7 +21,6 @@ function getQuote() {
   var url = 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous';
   function listener() {
     arr = this.responseText.split('","');
-    // console.log(arr);
   }
   var request = new XMLHttpRequest();
   request.addEventListener('load', listener);
@@ -36,4 +44,8 @@ function createParagraphs(array) {
     para.appendChild(document.createTextNode(v)); 
     output.appendChild(para);
   }
+}
+
+function generateTweet(array, target) {
+  target.href = 'https://twitter.com/intent/tweet?&text=' + array[0] + ' ~ ' + array[1];
 }
