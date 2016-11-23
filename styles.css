@@ -4,15 +4,30 @@
   margin: 10em auto 0;
   background: antiquewhite;
   padding: 1em;
+  min-width: 400px;
 }
 
 #output {
-  min-height: 200px;
+  /* min-height: 200px; */
   min-width: 400px;
   background-color: antiquewhite;
+  text-align: center;
+  margin-top: 5em;
+}
+#output p {
+  margin-top: 2em;
+  font-size: 19px;  
 }
 
 #new-quote {
   margin: 2em auto;
   display: block;
+  background-color: #FFFFFF;
+  padding: 0 6px;
+  border: solid #FFFFFF;
+  border-left-width: 14px;
+  border-right-width: 14px;
+  border-top-width: 9px;
+  border-bottom-width: 9px;
+  color: grey;
 }
