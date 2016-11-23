@@ -6,9 +6,7 @@
   padding: 1em;
   min-width: 400px;
 }
-
 #output {
-  /* min-height: 200px; */
   min-width: 400px;
   background-color: antiquewhite;
   text-align: center;
@@ -19,9 +17,9 @@
   font-size: 19px;  
 }
 
+#tweet,
 #new-quote {
   margin: 2em auto;
-  display: block;
   background-color: #FFFFFF;
   padding: 0 6px;
   border: solid #FFFFFF;
@@ -30,4 +28,12 @@
   border-top-width: 9px;
   border-bottom-width: 9px;
   color: grey;
+}
+button a {
+  color: grey;
+  text-decoration: none;
+} 
+.btn-grp {
+  display: flex;
+  justify-content: space-between;
 }
