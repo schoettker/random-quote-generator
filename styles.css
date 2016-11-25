@@ -1,3 +1,7 @@
+@font-face {
+  font-family: ClaireHandRegular;
+  src: url('ClaireHandRegular.otf');
+}
 html {
   transition: .8s;
 }
@@ -5,7 +9,6 @@ html {
   max-width: 700px;
   margin: 10em auto 0;
   padding: 1em;
-  /* background: white; */
   min-width: 400px;
 }
 #output {
@@ -15,16 +18,23 @@ html {
   color: white;
 }
 #output p {
+  font-family: ClaireHandRegular;
   margin-top: 2em;
-  font-size: 19px;  
+  font-size: 1.75em;
 }
 
 #tweet,
 #new-quote {
+  outline: none;
   margin: 2em auto;
   color: #ffffff;
   padding: .8em 1em;
   border: solid #FFFFFF;
+  transition: .3s;
+}
+#tweet:hover,
+#new-quote:hover {
+  opacity: .5;
 }
 .btn-grp {
   display: flex;
