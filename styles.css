@@ -1,5 +1,5 @@
 html {
-  transition: 1s;
+  transition: .8s;
 }
 .container {
   max-width: 700px;
