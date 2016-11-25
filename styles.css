@@ -34,7 +34,9 @@ html {
 }
 #tweet:hover,
 #new-quote:hover {
-  opacity: .5;
+  /* opacity: .5; */
+  background: white;
+  color: gray;
 }
 .btn-grp {
   display: flex;
