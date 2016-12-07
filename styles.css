@@ -4,6 +4,7 @@
 }
 html {
   transition: .8s;
+  box-sizing: border-box;
 }
 .container {
   max-width: 700px;
@@ -42,3 +43,16 @@ html {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 640px) {
+  .container {
+    max-width: 100%;
+    min-width: 217px;
+    padding: 0;
+    margin-top: 6em; }
+
+  #output {
+    min-width: 0; }
+  #output p {
+    font-size: 2em;
+  }
+  }
