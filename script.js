@@ -1,4 +1,4 @@
-var button = document.getElementById('new-quote'), 
+var newQuoteButton = document.getElementById('new-quote'), 
 output = document.getElementById('output'),
 tweet = document.getElementById('tweet');
 
@@ -7,7 +7,7 @@ window.onload = function() {
   changeColor();
 };
 
-button.addEventListener('click', function(event) {
+newQuoteButton.addEventListener('click', function(event) {
   XHRequest();
   changeColor();
 });
@@ -25,17 +25,17 @@ function proccesResponse() {
   for (var i = 0, l = arr.length - 1; i < l; i++) {
     quote.push(arr[i].replace(/"*\{*"*\w+":"/, ""));
   }
-  createParagraphs(quote);
+  createParagraphs(quote, output);
   tweet.addEventListener('click', function(event) {
     generateTweet(quote, this);
   });
 }
-function createParagraphs(array) {
-  output.innerHTML = null;
+function createParagraphs(array, parent) {
+  parent.innerHTML = null;
   for (var i = 0, l = array.length; i < l; i++) {
     para = document.createElement('p');
     para.appendChild(document.createTextNode(array[i])); 
-    output.appendChild(para);
+    parent.appendChild(para);
   }
 }
 function generateTweet(array, target) {
