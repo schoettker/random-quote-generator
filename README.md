@@ -1,5 +1,5 @@
 # Random Quote Generator
-This is one of the 'Intermediate Front End Development Projects' at [FreeCodeCamp](https://www.freecodecamp.com)
+This is my solution to one of the 'Intermediate Front End Development Projects' at [FreeCodeCamp](https://www.freecodecamp.com)
 
 
 You can click here to visit the projects page <https://schoettker.github.io/random-quote-generator/>
