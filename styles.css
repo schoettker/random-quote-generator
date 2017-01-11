@@ -49,6 +49,18 @@ html {
     min-width: 217px;
     padding: 0;
     margin-top: 6em; }
+  #tweet:hover,
+  #new-quote:hover {
+    /* opacity: .5; */
+    background: transparent;
+    color: #ffffff;
+  }
+#tweet:active,
+#new-quote:active {
+  /* opacity: .5; */
+  background: white;
+  color: gray;
+}
 
   #output {
     min-width: 0; }
