@@ -50,17 +50,19 @@ html {
     padding: 0;
     margin-top: 6em; }
   #tweet:hover,
-  #new-quote:hover {
+  #new-quote:hover,
+  #tweet:visited,
+  #new-quote:visited {
     /* opacity: .5; */
     background: transparent;
     color: #ffffff;
   }
-#tweet:active,
-#new-quote:active {
-  /* opacity: .5; */
-  background: white;
-  color: gray;
-}
+  #tweet:active,
+  #new-quote:active {
+    /* opacity: .5; */
+    background: white;
+    color: gray;
+  }
 
   #output {
     min-width: 0; }
